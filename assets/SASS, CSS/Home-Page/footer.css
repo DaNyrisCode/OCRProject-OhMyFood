@@ -1,12 +1,1 @@
 /*# sourceMappingURL=footer.css.map */
-footer {
-    background-color: var(--footer-bg-color);
-}
-
-li {
-    list-style: none;
-}
-
-li a {
-    text-decoration: none;
-}

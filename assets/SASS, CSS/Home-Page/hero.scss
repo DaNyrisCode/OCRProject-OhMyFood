@@ -20,7 +20,7 @@
     }
 
     button {
-        background: linear-gradient(45deg, #ae4fc8, #f28c40);
+        background: linear-gradient(90deg, map-get($colors, primary), map-get($colors, secondary));
         color: white;
         border: none;
         border-radius: 30px;

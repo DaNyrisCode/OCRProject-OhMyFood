@@ -1,0 +1,29 @@
+@import 'header.css';
+@import 'hero.css';
+@import 'restaurants.css';
+@import 'footer.css';
+
+:root {
+    --main-color:#F3F3F3;
+    --primary-color: #9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary-color:#99E2D0;
+    --new-font-color: #008766;
+    --footer-bg-color: #353535;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    gap: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
