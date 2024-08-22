@@ -1,0 +1,33 @@
+@import '../variables.scss';
+@import '../header.scss';
+@import '../footer.scss';
+@import 'hero.scss';
+@import 'restaurants.scss';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 30px;
+}
+
+img {
+    display: block;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.optimal-width {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}

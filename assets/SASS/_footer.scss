@@ -1,0 +1,12 @@
+footer {
+    background-color: $footer-bg;
+    width: 100%;
+
+    li {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

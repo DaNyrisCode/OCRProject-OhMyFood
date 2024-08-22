@@ -1,0 +1,82 @@
+.restaurants {
+    width: 100%;
+
+    &-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media all and (min-width: 767.98px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+            margin-top: 0;
+        }
+    }
+}
+
+.card {
+    background-color: $main;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    &-title {
+        font-size: 18px;
+        margin: 0 0 5px 0;
+        text-decoration: none;
+    }
+
+    &-subtitle {
+        font-size: 17px;
+        margin: 0;
+    }
+
+    &-fav {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+
+        .favorite {
+
+            &_empty img,
+            &_full img {
+                width: 22px;
+            }
+
+            &_full {
+                display: none;
+            }
+        }
+    }
+
+    &-info {
+        padding: 10px;
+        position: relative;
+    }
+
+    &:hover .favorite_empty {
+        display: none;
+    }
+
+    &:hover .favorite_full {
+        display: inline;
+    }
+
+    &-photo {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .label.new {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: $tertiary;
+        color: $new-font;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
