@@ -1,0 +1,86 @@
+.restaurant-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.restaurant-card a {
+    text-decoration: none;
+}
+
+.card {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.photo-restaurant {
+    width: 346px;
+    height: 231px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    text-decoration: none;
+}
+
+.card-subtitle {
+    font-size: 17px;
+    margin: 0;
+}
+
+.label.new {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--tertiary-color);
+    color: var(--new-font-color);
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.card-fav {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.favorite_empty img,
+.favorite_full img {
+    width: 22px;
+}
+
+.favorite_full {
+    display: none;
+}
+
+/* Affiche l'icône favorite_full et cache favorite_empty au survol de la carte */
+.card:hover .favorite_empty {
+    display: none;
+}
+
+.card:hover .favorite_full {
+    display: inline;
+}
+
+.restaurant-info {
+    padding: 10px;
+    position: relative;
+}
+
+/* Responsive*/
+
+/****** Media queries Desktop***********/
+
+@media all and (min-width: 767.98px) {
+    .restaurant-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin-top: 0;
+}
+}
