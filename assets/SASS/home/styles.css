@@ -1,3 +1,26 @@
+header {
+  width: 100%;
+}
+header img {
+  padding: 10px;
+  width: 250px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  background-color: #F3F3F3;
+  padding: 20px;
+}
+.location img {
+  width: 12px;
+  padding-right: 20px;
+}
+.location p {
+  margin: 0;
+  font-size: 16px;
+}
+
 footer {
   background-color: #353535;
   width: 100%;
@@ -16,6 +39,7 @@ footer li a {
   justify-content: center;
   padding: 50px 20px;
   background-color: #F3F3F3;
+  width: 100%;
 }
 .hero h1 {
   font-size: 24px;
@@ -54,6 +78,8 @@ footer li a {
 @media all and (min-width: 767.98px) {
   .step-contener {
     flex-direction: row;
+    justify-content: center;
+    gap: 50px;
   }
 }
 
@@ -65,9 +91,10 @@ footer li a {
 .fonctionnement .step {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #F3F3F3;
   border-radius: 20px;
-  padding: 15px;
+  padding: 15px 40px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
   position: relative;
 }

@@ -1,125 +1,152 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Oh My Food</title>
 
-<head>
-  <title>Oh My Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/SASS/home/styles.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
-    rel="stylesheet" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="assets/SASS/home/styles.css" />
-</head>
-
-<body>
-  <!-- --- HEADER -->
-  <header>
-    <img src="assets/images/logo/ohmyfood.png" alt="" />
-    <div class="location">
-      <img src="assets/images/icones/Local.png" alt="" />
-      <p>Paris, Belleville</p>
-    </div>
-  </header>
-
-  <!-- --- HERO -->
-  <section class="hero">
-    <h1>Réservez le menu qui vous convient</h1>
-    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-    <button>Explorer nos restaurants</button>
-  </section>
-
-  <!-- --- FONCTIONNEMENT -->
-  <section class="fonctionnement">
-    <h2>Fonctionnement</h2>
-    <div class="step-contener">
-      <div class="step">
-        <span class="step-absolute">1</span>
-        <img src="assets/images/icones/mobile.png" alt="" />
-        <p>Choisissez un restaurant</p>
+  <body>
+    <!-- --- HEADER -->
+    <header>
+      <img src="assets/images/logo/ohmyfood.png" alt="" />
+      <div class="location">
+        <img src="assets/images/icones/Local.png" alt="" />
+        <p>Paris, Belleville</p>
       </div>
-      <div class="step">
-        <span class="step-absolute">2</span>
-        <img src="assets/images/icones/liste.png" alt="" />
-        <p>Composez votre menu</p>
+    </header>
+
+    <!-- --- HERO -->
+    <section class="hero">
+      <h1>Réservez le menu qui vous convient</h1>
+      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+      <button>Explorer nos restaurants</button>
+    </section>
+
+    <!-- --- FONCTIONNEMENT -->
+    <section class="fonctionnement">
+      <h2>Fonctionnement</h2>
+      <div class="step-contener">
+        <div class="step">
+          <span class="step-absolute">1</span>
+          <img src="assets/images/icones/mobile.png" alt="" />
+          <p>Choisissez un restaurant</p>
+        </div>
+        <div class="step">
+          <span class="step-absolute">2</span>
+          <img src="assets/images/icones/liste.png" alt="" />
+          <p>Composez votre menu</p>
+        </div>
+        <div class="step">
+          <span class="step-absolute">3</span>
+          <img src="assets/images/icones/store.png" alt="" />
+          <p>Dégustez au restaurant</p>
+        </div>
       </div>
-      <div class="step">
-        <span class="step-absolute">3</span>
-        <img src="assets/images/icones/store.png" alt="" />
-        <p>Dégustez au restaurant</p>
+    </section>
+
+    <!-- --- RESTAURANTS -->
+    <section class="restaurants">
+      <h2>Restaurants</h2>
+      <div class="restaurants-grid">
+        <a class="card">
+          <img
+            class="card-photo"
+            src="assets/images/photos/palette_du_gout.jpg"
+            alt="La palette du goût"
+          />
+          <div class="card-info">
+            <h3 class="card-title">La palette du goût</h3>
+            <p class="card-subtitle">Montmartre</p>
+          </div>
+          <span class="label new">Nouveau</span>
+          <div class="card-fav">
+            <span class="favorite_empty"
+              ><img src="assets/images/icones/Fav_mty.png" alt="" /></span
+            ><span class="favorite_full"
+              ><img src="assets/images/icones/Fav_full.png" alt=""
+            /></span>
+          </div>
+        </a>
+
+        <a class="card">
+          <img
+            class="card-photo"
+            src="assets/images/photos/note_enchantee.jpg"
+            alt="La note enchantée"
+          />
+          <div class="card-info">
+            <h3 class="card-title">La note enchantée</h3>
+            <p class="card-subtitle">Charonne</p>
+          </div>
+          <span class="label new">Nouveau</span>
+          <div class="card-fav">
+            <span class="favorite_empty"
+              ><img src="assets/images/icones/Fav_mty.png" alt="" /></span
+            ><span class="favorite_full"
+              ><img src="assets/images/icones/Fav_full.png" alt=""
+            /></span>
+          </div>
+        </a>
+
+        <a class="card">
+          <img
+            class="card-photo"
+            src="assets/images/photos/a_la_francaise.jpg"
+            alt="À la française"
+          />
+          <div class="card-info">
+            <h3 class="card-title">À la française</h3>
+            <p class="card-subtitle">Cité Rouge</p>
+          </div>
+          <div class="card-fav">
+            <span class="favorite_empty"
+              ><img src="assets/images/icones/Fav_mty.png" alt="" /></span
+            ><span class="favorite_full"
+              ><img src="assets/images/icones/Fav_full.png" alt=""
+            /></span>
+          </div>
+        </a>
+
+        <a class="card">
+          <img
+            class="card-photo"
+            src="assets/images/photos/delices_des_sens.jpg"
+            alt="Le délice des sens"
+          />
+          <div class="card-info">
+            <h3 class="card-title">Le délice des sens</h3>
+            <p class="card-subtitle">Folies-Méricourt</p>
+          </div>
+          <div class="card-fav">
+            <span class="favorite_empty"
+              ><img src="assets/images/icones/Fav_mty.png" alt="" /></span
+            ><span class="favorite_full"
+              ><img src="assets/images/icones/Fav_full.png" alt=""
+            /></span>
+          </div>
+        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- --- RESTAURANTS -->
-  <section class="restaurants">
-    <h2>Restaurants</h2>
-    <div class="restaurants-grid">
-      <a class="card">
-        <img class="card-photo" src="assets/images/photos/palette_du_gout.jpg" alt="La palette du goût" />
-        <div class="card-info">
-          <h3 class="card-title">La palette du goût</h3>
-          <p class="card-subtitle">Montmartre</p>
-        </div>
-        <span class="label new">Nouveau</span>
-        <div class="card-fav">
-          <span class="favorite_empty"><img src="assets/images/icones/Fav_mty.png" alt="" /></span><span
-            class="favorite_full"><img src="assets/images/icones/Fav_full.png" alt="" /></span>
-        </div>
-      </a>
-
-      <a class="card">
-        <img class="card-photo" src="assets/images/photos/note_enchantee.jpg" alt="La note enchantée" />
-        <div class="card-info">
-          <h3 class="card-title">La note enchantée</h3>
-          <p class="card-subtitle">Charonne</p>
-        </div>
-        <span class="label new">Nouveau</span>
-        <div class="card-fav">
-          <span class="favorite_empty"><img src="assets/images/icones/Fav_mty.png" alt="" /></span><span
-            class="favorite_full"><img src="assets/images/icones/Fav_full.png" alt="" /></span>
-        </div>
-      </a>
-
-      <a class="card">
-        <img class="card-photo" src="assets/images/photos/a_la_francaise.jpg" alt="À la française" />
-        <div class="card-info">
-          <h3 class="card-title">À la française</h3>
-          <p class="card-subtitle">Cité Rouge</p>
-        </div>
-        <div class="card-fav">
-          <span class="favorite_empty"><img src="assets/images/icones/Fav_mty.png" alt="" /></span><span
-            class="favorite_full"><img src="assets/images/icones/Fav_full.png" alt="" /></span>
-        </div>
-      </a>
-
-      <a class="card">
-        <img class="card-photo" src="assets/images/photos/delices_des_sens.jpg" alt="Le délice des sens" />
-        <div class="card-info">
-          <h3 class="card-title">Le délice des sens</h3>
-          <p class="card-subtitle">Folies-Méricourt</p>
-        </div>
-        <div class="card-fav">
-          <span class="favorite_empty"><img src="assets/images/icones/Fav_mty.png" alt="" /></span><span
-            class="favorite_full"><img src="assets/images/icones/Fav_full.png" alt="" /></span>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- --- FOOTER -->
-  <footer>
-    <nav>
-      <h4>Ohmyfood</h4>
-      <ul>
-        <li><a href="#">Proposer un restaurant</a></li>
-        <li><a href="#">Devenir partenaire</a></li>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </footer>
-</body>
-
+    <!-- --- FOOTER -->
+    <footer>
+      <nav>
+        <h4>Ohmyfood</h4>
+        <ul>
+          <li><a href="#">Proposer un restaurant</a></li>
+          <li><a href="#">Devenir partenaire</a></li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
