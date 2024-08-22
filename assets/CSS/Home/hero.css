@@ -75,3 +75,13 @@
     justify-content: center;
     font-size: 14px;
 }
+
+/* Responsive*/
+
+/****** Media queries Desktop***********/
+@media all and (min-width: 767.98px) {
+    .step-contener {
+        flex-direction: row;
+    }
+
+}
