@@ -1,5 +1,8 @@
 header {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header img {
   padding: 10px;
@@ -9,8 +12,11 @@ header img {
 .location {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #F3F3F3;
-  padding: 20px;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 .location img {
   width: 12px;
@@ -25,11 +31,45 @@ footer {
   background-color: #353535;
   width: 100%;
 }
-footer li {
+@media all and (min-width: 767.98px) {
+  footer nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+}
+footer nav h4 {
+  color: #F3F3F3;
+  font-family: "Shrikhand";
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 15px 0;
+}
+footer ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media all and (min-width: 767.98px) {
+  footer ul {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+footer ul li {
   list-style: none;
 }
-footer li a {
+footer ul li a {
+  display: flex;
+  align-items: center;
+  color: #F3F3F3;
   text-decoration: none;
+}
+footer ul li a img {
+  height: 13px;
+  padding-right: 10px;
 }
 
 .hero {
@@ -61,7 +101,7 @@ footer li a {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
   transition: 0.2s;
 }
 .hero button:hover {
@@ -95,15 +135,21 @@ footer li a {
   background-color: #F3F3F3;
   border-radius: 20px;
   padding: 15px 40px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   position: relative;
+  margin: 0 10px;
+}
+@media all and (min-width: 767.98px) {
+  .fonctionnement .step {
+    margin: 0;
+  }
 }
 .fonctionnement .step img {
   margin-right: 15px;
 }
 .fonctionnement .step-absolute {
   position: absolute;
-  left: -15px;
+  left: -10px;
   top: 50%;
   transform: translateY(-50%);
   background-color: #9356DC;
@@ -117,10 +163,10 @@ footer li a {
   font-size: 14px;
 }
 
-/* Responsive*/
-/****** Media queries Desktop***********/
 .restaurants {
-  width: 100%;
+  background-color: #F3F3F3;
+  padding: 30px 20px;
+  margin-top: 30px;
 }
 .restaurants-grid {
   display: flex;
@@ -140,7 +186,7 @@ footer li a {
   background-color: #F3F3F3;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 .card-title {
@@ -191,14 +237,13 @@ footer li a {
 
 * {
   font-family: "Roboto", sans-serif;
+  color: black;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0;
-  gap: 30px;
+  margin: 0 auto;
 }
 
 img {
@@ -211,8 +256,8 @@ h2 {
 
 .optimal-width {
   width: 100%;
-  max-width: 1200px;
-  padding: 20px;
+  max-width: 1400px;
   box-sizing: border-box;
   margin: 0 auto;
+  padding: 0 20px;
 }/*# sourceMappingURL=styles.css.map */

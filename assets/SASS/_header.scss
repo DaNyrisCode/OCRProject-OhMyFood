@@ -1,5 +1,8 @@
 header {
     width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
     img {
         padding: 10px;
         width: 250px;
@@ -9,8 +12,11 @@ header {
 .location {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: $main;
-    padding: 20px;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
     img {
         width: 12px;

@@ -1,5 +1,7 @@
 .restaurants {
-    width: 100%;
+    background-color: $main;
+    padding: 30px 20px;
+    margin-top: 30px;
 
     &-grid {
         display: flex;
@@ -19,7 +21,7 @@
     background-color: $main;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     position: relative;
 
     &-title {
