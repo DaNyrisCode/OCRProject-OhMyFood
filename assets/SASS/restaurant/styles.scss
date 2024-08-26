@@ -1,9 +1,12 @@
 @import '../variables.scss';
 @import '../header.scss';
 @import '../footer.scss';
+@import './hero';
+@import './menu';
 
 * {
     font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 body {
@@ -11,9 +14,50 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    gap: 30px;
+}
+
+h1 {
+    font-family: 'Shrikhand', sans-serif;
 }
 
 h2 {
-    font-size: 24px;
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 28px;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+h4, p {
+    margin: 0;
+  }
+
+.enseigne-photo{
+    width: 100%;
+    }
+    
+.optimal-width {
+    width: 100%;
+    max-width: 1400px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.order-button {
+        background: linear-gradient(0deg, $primary, $secondary);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0px 3px 15px rgba(0 0 0 / 50%);
+        transition: 0.2s;
+
+        &:hover {
+            filter: brightness(120%);
+        }
 }

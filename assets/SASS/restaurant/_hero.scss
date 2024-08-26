@@ -1,0 +1,35 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $main;
+    border-radius: 20px 20px;
+    padding: 30px 50px;
+
+    &-title {      
+        display: flex; 
+        flex-direction: row;
+        align-items: center; 
+
+        &:hover .favorite_empty {
+            display: none;
+        }
+    
+        &:hover .favorite_full {
+            display: inline;
+        }
+
+        .favorite {
+
+            &_empty img,
+            &_full img {
+                width: 22px;
+                padding-left: 20px;
+            }
+
+            &_full {
+                display: none;
+            }
+        }
+    }
+}

@@ -13,10 +13,16 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F3F3F3;
+  background-color: #F6F6F6;
   padding: 15px;
   width: 100%;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+@media all and (min-width: 767.98px) {
+  .location {
+    background-color: #EAEAEA;
+    box-shadow: none;
+  }
 }
 .location img {
   width: 12px;
@@ -27,6 +33,14 @@ header img {
   font-size: 16px;
 }
 
+.restaurant-header {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurant-header img {
+  width: 30px;
+}
+
 footer {
   background-color: #353535;
   width: 100%;
@@ -35,16 +49,21 @@ footer {
   footer nav {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: flex-end;
     gap: 20px;
   }
 }
 footer nav h4 {
-  color: #F3F3F3;
+  color: #F6F6F6;
   font-family: "Shrikhand";
   font-size: 20px;
   font-weight: lighter;
   margin: 15px 0;
+}
+@media all and (min-width: 767.98px) {
+  footer nav h4 {
+    margin-top: 50px;
+  }
 }
 footer ul {
   padding: 0;
@@ -55,7 +74,7 @@ footer ul {
 @media all and (min-width: 767.98px) {
   footer ul {
     flex-direction: row;
-    gap: 15px;
+    gap: 20px;
   }
 }
 footer ul li {
@@ -64,7 +83,7 @@ footer ul li {
 footer ul li a {
   display: flex;
   align-items: center;
-  color: #F3F3F3;
+  color: #F6F6F6;
   text-decoration: none;
 }
 footer ul li a img {
@@ -78,8 +97,14 @@ footer ul li a img {
   align-items: center;
   justify-content: center;
   padding: 50px 20px;
-  background-color: #F3F3F3;
+  background-color: #F6F6F6;
   width: 100%;
+  box-shadow: inset 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media all and (min-width: 767.98px) {
+  .hero {
+    box-shadow: none;
+  }
 }
 .hero h1 {
   font-size: 24px;
@@ -114,6 +139,7 @@ footer ul li a img {
   flex-direction: column;
   width: 100%;
   gap: 15px;
+  padding-bottom: 30px;
 }
 @media all and (min-width: 767.98px) {
   .step-contener {
@@ -124,15 +150,16 @@ footer ul li a img {
 }
 
 .fonctionnement {
-  width: 100%;
-  padding: 0 20px;
-  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+.fonctionnement h2 {
+  padding-top: 30px;
 }
 .fonctionnement .step {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F3F3F3;
+  background-color: #F6F6F6;
   border-radius: 20px;
   padding: 15px 40px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
@@ -164,7 +191,7 @@ footer ul li a img {
 }
 
 .restaurants {
-  background-color: #F3F3F3;
+  background-color: #F6F6F6;
   padding: 30px 20px;
   margin-top: 30px;
 }
@@ -183,7 +210,7 @@ footer ul li a img {
 }
 
 .card {
-  background-color: #F3F3F3;
+  background-color: #F6F6F6;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);

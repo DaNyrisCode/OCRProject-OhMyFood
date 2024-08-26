@@ -1,0 +1,59 @@
+.menu {
+    &-starter, &-main, &-dessert {
+      @include menu-flex;
+    }
+  
+    &-item {
+      border-radius: 20px;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 20px 10px;
+      position: relative;
+  
+      &:hover .check {
+        display: inline;
+        background-color: $tertiary;
+        right: 10px;
+      }
+  
+      .menu-description {
+        
+        .item-description {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  
+    &-choise {
+      img {
+        display: none;
+        position: absolute;
+        right: -20px;
+        transition: left 2s;
+      }
+    }
+  }
+  
+
+// <div class="search-container">
+// <div class="search-wrapper">
+//   <img
+//     src="images/icones/Local.png"
+//     alt="Local icon"
+//     class="search-icon"
+//   />
+//   <input
+//     type="search"
+//     class="search-input"
+//     placeholder="Marseille, France"
+//   />
+// </div>
+// <button type="button" class="search-button">
+//   <span class="text-search">Rechercher</span
+//   ><span><img src="images/icones/Loupe.png" alt="Loupe icon" /></span>
+// </button>
+// </div>

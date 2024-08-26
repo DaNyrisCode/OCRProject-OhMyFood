@@ -6,6 +6,11 @@
     padding: 50px 20px;
     background-color: $main;
     width: 100%;
+    box-shadow: inset 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+
+    @media all and (min-width: 767.98px) {
+        box-shadow: none;
+    }
 
     h1 {
         font-size: 24px;
@@ -44,6 +49,7 @@
     flex-direction: column;
     width: 100%;
     gap: 15px;
+    padding-bottom: 30px;
 
     @media all and (min-width: 767.98px) {
         flex-direction: row;
@@ -53,10 +59,10 @@
 }
 
 .fonctionnement {
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-
+    margin-bottom: 30px;
+    h2 {
+        padding-top: 30px;
+    }
     .step {
         display: flex;
         align-items: center;
