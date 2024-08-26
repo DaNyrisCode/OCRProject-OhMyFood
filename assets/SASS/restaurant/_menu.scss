@@ -11,15 +11,20 @@
       align-items: flex-end;
       padding: 20px 10px;
       position: relative;
+
+      &:hover {
+        .check {
+            display: inline;
+            background-color: $tertiary;
+            right: 0; // Pousse le check vers la gauche
+        }
   
-      &:hover .check {
-        display: inline;
-        background-color: $tertiary;
-        right: 10px;
+        .item-price {
+          margin-right: 30px; // Pousse le prix vers la gauche
+        }
       }
   
-      .menu-description {
-        
+      .menu-description {        
         .item-description {
           overflow: hidden;
           white-space: nowrap;
@@ -29,31 +34,21 @@
     }
   
     &-choise {
-      img {
-        display: none;
-        position: absolute;
-        right: -20px;
-        transition: left 2s;
-      }
-    }
-  }
-  
+        position: relative;
 
-// <div class="search-container">
-// <div class="search-wrapper">
-//   <img
-//     src="images/icones/Local.png"
-//     alt="Local icon"
-//     class="search-icon"
-//   />
-//   <input
-//     type="search"
-//     class="search-input"
-//     placeholder="Marseille, France"
-//   />
-// </div>
-// <button type="button" class="search-button">
-//   <span class="text-search">Rechercher</span
-//   ><span><img src="images/icones/Loupe.png" alt="Loupe icon" /></span>
-// </button>
-// </div>
+        .item-price {
+            z-index: 1;
+            transition: margin-right 0.5s ease; // Transition pour le prix
+          }
+
+        .check {
+            display: none;
+            position: absolute;
+            right: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: right 0.5s ease; // Transition pour le check
+            background-color: $tertiary;
+        }
+    }
+}
