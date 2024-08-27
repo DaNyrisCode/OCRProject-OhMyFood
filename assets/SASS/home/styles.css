@@ -1,10 +1,10 @@
-header {
+.home-header {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-header img {
+.home-header img {
   padding: 10px;
   width: 250px;
 }
@@ -34,11 +34,17 @@ header img {
 }
 
 .restaurant-header {
-  flex-direction: row;
-  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.restaurant-header img {
-  width: 30px;
+.restaurant-header .return-button {
+  position: absolute;
+  left: 10px;
+}
+.restaurant-header .return-button img {
+  width: 25px;
 }
 
 footer {

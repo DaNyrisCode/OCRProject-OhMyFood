@@ -1,4 +1,5 @@
 .menu {
+
     &-starter, &-main, &-dessert {
       @include menu-flex;
     }
@@ -9,46 +10,76 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      padding: 20px 10px;
+      padding: 20px 15px;
       position: relative;
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
 
-      &:hover {
-        .check {
-            display: inline;
-            background-color: $tertiary;
-            right: 0; // Pousse le check vers la gauche
-        }
-  
-        .item-price {
-          margin-right: 30px; // Pousse le prix vers la gauche
-        }
+          // Pseudo-élément pour l'effet de glissement vers la gauche
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 0;
+      background-color: $tertiary;
+      transition: width 0.3s ease;
+      z-index: 1;
+    }
+
+    &:hover::before {
+      width: 55px;  // 30% de la carte devient verte
+    }
+
+    &:hover {
+      .check {
+        display: inline;
+        position: absolute;
+        bottom: 50%;
+        right: 10px;
+        z-index: 2;
+        transition: right 0.5s ease; // Animation du check
       }
-  
-      .menu-description {        
-        .item-description {
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-        }
+
+      .item-price {
+        margin-right: 50px; // Pousse le prix vers la gauche
       }
     }
-  
-    &-choise {
-        position: relative;
 
-        .item-price {
-            z-index: 1;
-            transition: margin-right 0.5s ease; // Transition pour le prix
-          }
+    .menu-description {
+      white-space: nowrap;
+      overflow: hidden;
+      z-index: 2; // Pour que que le texte reste au-dessus de l'effet vert
+      display: flex; 
+      flex-direction: column;
+      gap: 5px;
 
-        .check {
-            display: none;
-            position: absolute;
-            right: -40px;
-            top: 50%;
-            transform: translateY(-50%);
-            transition: right 0.5s ease; // Transition pour le check
-            background-color: $tertiary;
-        }
+      .item-name{
+        font-size: 18px;
+      }
+
+      .item-description {
+        font-size: 15px;
+        text-overflow: ellipsis;
+      }
     }
+  }
+
+  &-choise {
+    position: relative;
+    z-index: 2; // Pour que le contenu soit au-dessus du pseudo-élément
+
+    .item-price {
+      font-weight: bolder;
+    }
+
+    .check {
+      display: none;
+      right: -30px; // Positionné en dehors de la vue au départ
+      position: absolute;
+      width: 20px;
+      height: 20px;
+    }
+  }
 }

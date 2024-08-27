@@ -1,8 +1,10 @@
-header {
+// --- HOME PAGE ---
+.home-header {
     width: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
+
     img {
         padding: 10px;
         width: 250px;
@@ -34,11 +36,18 @@ header {
     }
 }
 
+// --- RESTAURANT PAGE ---
 .restaurant-header {
-    flex-direction: row;
-    justify-content: space-between;
-
-    img {
-        width: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .return-button {
+      position: absolute; 
+      left: 10px;         
+      img {
+        width: 25px;
+      }
     }
 }
