@@ -12,10 +12,10 @@
       align-items: flex-end;
       padding: 20px 15px;
       position: relative;
-      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
+      overflow: hidden; // Pour que la couleur verte ne dépasse pas de la card
+      @include shadow-card;
 
-          // Pseudo-élément pour l'effet de glissement vers la gauche
+// Pseudo-élément pour l'effet de glissement vers la gauche
     &::before {
       content: "";
       position: absolute;
