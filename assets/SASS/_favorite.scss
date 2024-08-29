@@ -1,0 +1,28 @@
+.favorite {
+    margin: 10px 30px 0 0;
+    position: relative;
+    height: 22px;
+
+    img {
+      position: absolute;
+      width: 22px;
+      margin-bottom: 7px;
+      transition: 0.2s;
+
+      &.full {
+        opacity: 0;
+      }
+    }
+
+    &:hover {
+      img {
+        &.full {
+          opacity: 1;
+        }
+
+        &.empty {
+          opacity: 0;
+        }
+      }
+    }
+  }

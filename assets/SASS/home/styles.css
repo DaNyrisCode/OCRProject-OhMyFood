@@ -99,6 +99,27 @@ footer ul li a img {
   padding-right: 10px;
 }
 
+.favorite {
+  margin: 10px 30px 0 0;
+  position: relative;
+  height: 22px;
+}
+.favorite img {
+  position: absolute;
+  width: 22px;
+  margin-bottom: 7px;
+  transition: 0.2s;
+}
+.favorite img.full {
+  opacity: 0;
+}
+.favorite:hover img.full {
+  opacity: 1;
+}
+.favorite:hover img.empty {
+  opacity: 0;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -202,7 +223,14 @@ footer ul li a img {
 .restaurants {
   background-color: #F6F6F6;
   padding: 30px 20px;
-  margin-top: 30px;
+  margin: 30px auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media all and (min-width: 767.98px) {
+  .restaurants {
+    padding: 30px 180px;
+  }
 }
 .restaurants-grid {
   display: flex;
@@ -226,42 +254,19 @@ footer ul li a img {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
-.card-title {
-  font-size: 18px;
-  margin: 0 0 5px 0;
-}
-.card-subtitle {
-  font-size: 17px;
-  margin: 0;
-}
-.card-fav {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-}
-.card-fav .favorite_empty img, .card-fav .favorite_full img {
-  width: 22px;
-}
-.card-fav .favorite_full {
-  display: none;
-}
-.card-info {
-  padding: 10px;
-  position: relative;
-}
-.card:hover .favorite_empty {
-  display: none;
-}
-.card:hover .favorite_full {
-  display: inline;
-}
 .card-photo {
   width: 100%;
   height: 230px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.card .label.new {
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.card-content .label.new {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -269,6 +274,20 @@ footer ul li a img {
   color: #008766;
   padding: 5px 10px;
   font-size: 14px;
+}
+
+.card-info {
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+}
+.card-info .info-title {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+.card-info .info-subtitle {
+  font-size: 17px;
+  margin: 0;
 }
 
 * {
@@ -293,7 +312,7 @@ h2 {
 
 .optimal-width {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1080px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 20px;

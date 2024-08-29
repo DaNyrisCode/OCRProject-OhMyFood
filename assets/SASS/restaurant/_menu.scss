@@ -1,85 +1,87 @@
 .menu {
+  width: 100%;
+  max-width: 635px;
+  margin: 0 auto;
 
-    &-starter, &-main, &-dessert {
-      @include menu-flex;
-    }
-  
-    &-item {
-      border-radius: 20px;
-      background-color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      padding: 20px 15px;
-      position: relative;
-      overflow: hidden; // Pour que la couleur verte ne dépasse pas de la card
-      @include shadow-card;
+  &-starter,
+  &-main,
+  &-dessert {
+    @include menu-flex;
+  }
 
-// Pseudo-élément pour l'effet de glissement vers la gauche
-    &::before {
-      content: "";
+  &-item {
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden; // Pour que la couleur verte ne dépasse pas de la card
+    @include shadow-card;
+    position: relative;
+
+    &-check {
       position: absolute;
-      top: 0;
-      right: 0;
+      width: 50px;
+      right: -50px;
+      display: flex;
       height: 100%;
-      width: 0;
-      background-color: $tertiary;
-      transition: width 0.3s ease;
-      z-index: 1;
+      background: $tertiary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s;
+
+      img {
+        height: 20px;
+        width: 20px;
+        object-fit: contain;
+      }
     }
 
-    &:hover::before {
-      width: 55px;  // 30% de la carte devient verte
+    &-choice {
+      padding: 20px 15px;
+
+      .item-price {
+        font-weight: bolder;
+        transition: 0.2s;
+      }
+    }
+
+    &-description {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 20px 15px;
+
+      .item {
+
+        &-name {
+          font-size: 18px;
+        }
+
+        &-description {
+          font-size: 15px;
+        }
+
+        &-name,
+        &-description {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+
     }
 
     &:hover {
-      .check {
-        display: inline;
-        position: absolute;
-        bottom: 50%;
-        right: 10px;
-        z-index: 2;
-        transition: right 0.5s ease; // Animation du check
-      }
-
       .item-price {
         margin-right: 50px; // Pousse le prix vers la gauche
       }
-    }
 
-    .menu-description {
-      white-space: nowrap;
-      overflow: hidden;
-      z-index: 2; // Pour que que le texte reste au-dessus de l'effet vert
-      display: flex; 
-      flex-direction: column;
-      gap: 5px;
-      text-overflow: ellipsis;
-
-      .item-name{
-        font-size: 18px;
+      .menu-item-check {
+        right: 0;
       }
-
-      .item-description {
-        font-size: 15px;
-      }
-    }
-  }
-
-  &-choise {
-    position: relative;
-    z-index: 2; // Pour que le contenu soit au-dessus du pseudo-élément
-
-    .item-price {
-      font-weight: bolder;
-    }
-
-    .check {
-      display: none;
-      right: -30px; // Positionné en dehors de la vue au départ
-      position: absolute;
-      width: 20px;
-      height: 20px;
     }
   }
 }

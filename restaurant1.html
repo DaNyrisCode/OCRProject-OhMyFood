@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <!-- --- HEADER -->
+    <!-- HEADER -->
     <header>
       <nav class="restaurant-header">
         <a href="./Index.html" class="return-button">
@@ -33,30 +33,31 @@
       src="assets/images/photos/palette_du_gout.jpg"
       alt=""
     />
-    <!-- --- HERO -->
-    <section class="hero">
+    <!-- HERO -->
+    <section class="hero optimal-width">
       <div class="hero-title">
         <h2>La Palette du goût</h2>
-        <span class="favorite_empty"
-          ><img src="assets/images/icones/Fav_mty.png" alt="" /></span
-        ><span class="favorite_full"
-          ><img src="assets/images/icones/Fav_full.png" alt=""
-        /></span>
+        <div class="favorite">
+          <img src="assets/images/icones/Fav_mty.png" alt="" class="empty" />
+          <img src="assets/images/icones/Fav_full.png" alt="" class="full" />
+        </div>
       </div>
 
-      <!-- --- MENU -->
-      <section class="menu optimal-width">
-        <!-- --- ENTREES -->
+      <!-- MENU -->
+      <section class="menu">
+        <!-- ENTREES -->
         <h3 class="menu-category">ENTREES</h3>
         <div class="menu-starter">
-          <!-- --- ENTREE 1 -->
+          <!-- ENTREE 1 -->
           <article class="menu-item">
-            <div class="menu-description">
+            <div class="menu-item-description">
               <h4 class="item-name">Fricassée d'escargots</h4>
               <p class="item-description">Au piment d'Espelette</p>
             </div>
-            <div class="menu-choise">
+            <div class="menu-item-choice">
               <span class="item-price">25€</span>
+            </div>
+            <div class="menu-item-check">
               <img
                 class="check"
                 src="assets/images/icones/Icon_check.png"
@@ -65,14 +66,16 @@
             </div>
           </article>
 
-          <!-- --- ENTREE 2 -->
+          <!-- ENTREE 2 -->
           <article class="menu-item">
-            <div class="menu-description">
+            <div class="menu-item-description">
               <h4 class="item-name">Foie gras de canard mi-cuit</h4>
               <p class="item-description">Et ses copeaux de truffe noire</p>
             </div>
-            <div class="menu-choise">
-              <span class="item-price">35€</span>
+            <div class="menu-item-choice">
+              <span class="item-price">25€</span>
+            </div>
+            <div class="menu-item-check">
               <img
                 class="check"
                 src="assets/images/icones/Icon_check.png"
@@ -81,16 +84,18 @@
             </div>
           </article>
 
-          <!-- --- ENTREE 3 -->
+          <!-- ENTREE 3 -->
           <article class="menu-item">
-            <div class="menu-description">
+            <div class="menu-item-description">
               <h4 class="item-name">Œuf au plat</h4>
               <p class="item-description">
                 Assaisonné à la truffe sur lit de caviar
               </p>
             </div>
-            <div class="menu-choise">
-              <span class="item-price">20€</span>
+            <div class="menu-item-choice">
+              <span class="item-price">25€</span>
+            </div>
+            <div class="menu-item-check">
               <img
                 class="check"
                 src="assets/images/icones/Icon_check.png"
@@ -100,19 +105,21 @@
           </article>
         </div>
 
-        <!-- --- PLATS -->
+        <!-- PLATS -->
         <h3 class="menu-category">PLATS</h3>
         <div class="menu-main">
-          <!-- --- PLAT 1 -->
+          <!-- PLAT 1 -->
           <article class="menu-item">
-            <div class="menu-description">
+            <div class="menu-item-description">
               <h4 class="item-name">Filet de bœuf aux herbes</h4>
               <p class="item-description">
                 Accompagné de sa ribambelle de légumes
               </p>
             </div>
-            <div class="menu-choise">
-              <span class="item-price">40€</span>
+            <div class="menu-item-choice">
+              <span class="item-price">25€</span>
+            </div>
+            <div class="menu-item-check">
               <img
                 class="check"
                 src="assets/images/icones/Icon_check.png"
@@ -120,16 +127,19 @@
               />
             </div>
           </article>
-          <!-- --- PLAT 2 -->
+
+          <!-- PLAT 2 -->
           <article class="menu-item">
-            <div class="menu-description">
+            <div class="menu-item-description">
               <h4 class="item-name">Parmentier de queue de bœuf</h4>
               <p class="item-description">
                 À la truffe noire sur sa purée de panais
               </p>
             </div>
-            <div class="menu-choise">
-              <span class="item-price">35€</span>
+            <div class="menu-item-choice">
+              <span class="item-price">25€</span>
+            </div>
+            <div class="menu-item-check">
               <img
                 class="check"
                 src="assets/images/icones/Icon_check.png"
@@ -137,14 +147,16 @@
               />
             </div>
           </article>
-          <!-- --- PLAT 3 -->
+          <!-- PLAT 3 -->
           <article class="menu-item">
-            <div class="menu-description">
+            <div class="menu-item-description">
               <h4 class="item-name">Filet de turbot</h4>
               <p class="item-description">Aux agrumes</p>
             </div>
-            <div class="menu-choise">
-              <span class="item-price">44€</span>
+            <div class="menu-item-choice">
+              <span class="item-price">25€</span>
+            </div>
+            <div class="menu-item-check">
               <img
                 class="check"
                 src="assets/images/icones/Icon_check.png"
@@ -154,17 +166,19 @@
           </article>
         </div>
 
-        <!-- --- DESSERTS -->
+        <!-- DESSERTS -->
         <h3 class="menu-category">DESSERTS</h3>
         <div class="menu-dessert">
-          <!-- --- DESSERT 1 -->
+          <!-- DESSERT 1 -->
           <article class="menu-item">
-            <div class="menu-description">
+            <div class="menu-item-description">
               <h4 class="item-name">Paris-Brest</h4>
               <p class="item-description">Revisité</p>
             </div>
-            <div class="menu-choise">
-              <span class="item-price">18€</span>
+            <div class="menu-item-choice">
+              <span class="item-price">25€</span>
+            </div>
+            <div class="menu-item-check">
               <img
                 class="check"
                 src="assets/images/icones/Icon_check.png"
@@ -173,16 +187,18 @@
             </div>
           </article>
 
-          <!-- --- DESSERT 2 -->
+          <!-- DESSERT 2 -->
           <article class="menu-item">
-            <div class="menu-description">
+            <div class="menu-item-description">
               <h4 class="item-name">Macaron au chocolat d'exception</h4>
               <p class="item-description">
                 Et glace à la vanille de Madagascar
               </p>
             </div>
-            <div class="menu-choise">
-              <span class="item-price">22€</span>
+            <div class="menu-item-choice">
+              <span class="item-price">25€</span>
+            </div>
+            <div class="menu-item-check">
               <img
                 class="check"
                 src="assets/images/icones/Icon_check.png"
@@ -191,16 +207,18 @@
             </div>
           </article>
 
-          <!-- --- DESSERT 3 -->
+          <!-- DESSERT 3 -->
           <article class="menu-item">
-            <div class="menu-description">
+            <div class="menu-item-description">
               <h4 class="item-name">Mousse au chocolat</h4>
               <p class="item-description">
                 Au piment d'Espelette et à la truffe noire
               </p>
             </div>
-            <div class="menu-choise">
-              <span class="item-price">23€</span>
+            <div class="menu-item-choice">
+              <span class="item-price">25€</span>
+            </div>
+            <div class="menu-item-check">
               <img
                 class="check"
                 src="assets/images/icones/Icon_check.png"
@@ -211,11 +229,11 @@
         </div>
       </section>
 
-      <!-- --- COMMANDER -->
+      <!-- COMMANDER -->
       <button class="order-button">Commander</button>
     </section>
 
-    <!-- --- FOOTER -->
+    <!-- FOOTER -->
     <footer>
       <nav class="footer optimal-width">
         <h4>Ohmyfood</h4>
