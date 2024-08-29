@@ -6,6 +6,7 @@
     padding: 50px 20px;
     background-color: $main;
     width: 100%;
+    box-sizing: border-box;
     @include shadow-card;
 
     @media all and (min-width: 767.98px) {

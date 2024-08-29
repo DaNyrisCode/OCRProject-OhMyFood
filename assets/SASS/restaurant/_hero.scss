@@ -4,10 +4,8 @@
     align-items: center;
     background-color: $main;
     border-radius: 20px 20px;
-    padding: 30px 50px;
     width: 100%;
     box-sizing: border-box;
-    gap: 30px;
     margin-top: -30px;
 
     @media all and (min-width: 767.98px) {
@@ -16,8 +14,7 @@
 
     &-title {      
         display: flex; 
-        flex-direction: row;
-        align-items: center; 
+        align-items: flex-end; 
 
         &:hover .favorite_empty {
             display: none;
@@ -33,6 +30,7 @@
             &_full img {
                 width: 22px;
                 padding-left: 20px;
+                margin-bottom: 7px;
             }
 
             &_full {

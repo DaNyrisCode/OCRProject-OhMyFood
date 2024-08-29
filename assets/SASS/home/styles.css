@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 .home-header img {
   padding: 10px;
@@ -50,6 +51,7 @@
 footer {
   background-color: #353535;
   width: 100%;
+  box-sizing: border-box;
 }
 @media all and (min-width: 767.98px) {
   footer nav {
@@ -105,6 +107,7 @@ footer ul li a img {
   padding: 50px 20px;
   background-color: #F6F6F6;
   width: 100%;
+  box-sizing: border-box;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
 }
 @media all and (min-width: 767.98px) {
@@ -221,6 +224,7 @@ footer ul li a img {
   overflow: hidden;
   position: relative;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
 .card-title {
   font-size: 18px;
@@ -276,6 +280,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  min-width: 375px;
 }
 
 img {

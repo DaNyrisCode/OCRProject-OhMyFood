@@ -23,6 +23,7 @@
     overflow: hidden;
     position: relative;
     @include shadow-card;
+    text-decoration: none;
 
     &-title {
         font-size: 18px;

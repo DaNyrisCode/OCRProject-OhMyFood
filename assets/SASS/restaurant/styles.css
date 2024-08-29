@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 .home-header img {
   padding: 10px;
@@ -50,6 +51,7 @@
 footer {
   background-color: #353535;
   width: 100%;
+  box-sizing: border-box;
 }
 @media all and (min-width: 767.98px) {
   footer nav {
@@ -103,10 +105,8 @@ footer ul li a img {
   align-items: center;
   background-color: #F6F6F6;
   border-radius: 20px 20px;
-  padding: 30px 50px;
   width: 100%;
   box-sizing: border-box;
-  gap: 30px;
   margin-top: -30px;
 }
 @media all and (min-width: 767.98px) {
@@ -116,8 +116,7 @@ footer ul li a img {
 }
 .hero-title {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
 }
 .hero-title:hover .favorite_empty {
   display: none;
@@ -128,6 +127,7 @@ footer ul li a img {
 .hero-title .favorite_empty img, .hero-title .favorite_full img {
   width: 22px;
   padding-left: 20px;
+  margin-bottom: 7px;
 }
 .hero-title .favorite_full {
   display: none;
@@ -181,13 +181,13 @@ footer ul li a img {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  text-overflow: ellipsis;
 }
 .menu-item .menu-description .item-name {
   font-size: 18px;
 }
 .menu-item .menu-description .item-description {
   font-size: 15px;
-  text-overflow: ellipsis;
 }
 .menu-choise {
   position: relative;
@@ -225,6 +225,7 @@ h1 {
 h2 {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
+  margin: 30px 0 0 0;
 }
 
 h3 {
@@ -232,6 +233,7 @@ h3 {
   padding-bottom: 5px;
   border-bottom: 2px solid #99E2D0;
   width: 30px;
+  margin: 40px 0 20px 0;
 }
 
 h4, p {
@@ -264,6 +266,7 @@ h4, p {
   border: none;
   border-radius: 30px;
   padding: 10px 20px;
+  margin: 40px 0;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;

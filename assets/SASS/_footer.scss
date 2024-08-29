@@ -1,6 +1,7 @@
 footer {
     background-color: $footer-bg;
     width: 100%;
+    box-sizing: border-box;
 
     nav {
         @media all and (min-width: 767.98px) {
