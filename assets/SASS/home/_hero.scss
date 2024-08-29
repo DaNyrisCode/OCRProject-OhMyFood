@@ -7,7 +7,7 @@
     background-color: $main;
     width: 100%;
     box-sizing: border-box;
-    @include shadow-card;
+    box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
 
     @media all and (min-width: 767.98px) {
         box-shadow: none;
