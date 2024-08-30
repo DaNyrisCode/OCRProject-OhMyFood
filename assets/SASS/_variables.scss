@@ -5,12 +5,18 @@ $tertiary: #99E2D0;
 $new-font: #008766;
 $footer-bg: #353535;
 
+$font-family: 'Roboto', sans-serif;
+
 @mixin menu-flex {
     display:flex ;
     flex-direction: column;
     gap: 10px;
 }
 
-@mixin shadow-card {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
-}
+@mixin box-shadow($x: 0px, $y: 3px, $blur: 15px, $color: rgba(0, 0, 0, 0.3), $inset: false) {
+    box-shadow: if($inset, inset, null) $x $y $blur $color;
+  }
+
+@mixin rounded($radius: 20px) {
+    border-radius: $radius;
+  }

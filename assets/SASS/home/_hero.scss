@@ -7,7 +7,7 @@
     background-color: $main;
     width: 100%;
     box-sizing: border-box;
-    box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    @include box-shadow(0px, 5px, 5px, rgba(0, 0, 0, 0.3), true);
 
     @media all and (min-width: 767.98px) {
         box-shadow: none;
@@ -36,7 +36,7 @@
         font-weight: bold;
         cursor: pointer;
         transition: 0.2s;
-        @include shadow-card;
+        @include box-shadow;
 
         &:hover {
             filter: brightness(120%);
@@ -71,11 +71,11 @@
         align-items: center;
         justify-content: center;
         background-color: $main;
-        border-radius: 20px;
         padding: 15px 40px;
         position: relative;
         margin: 0 10px;
-        @include shadow-card;
+        @include box-shadow;
+        @include rounded;
 
         @media all and (min-width: 767.98px) {
             margin: 0;

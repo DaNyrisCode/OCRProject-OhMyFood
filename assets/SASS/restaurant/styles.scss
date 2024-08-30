@@ -6,7 +6,7 @@
 @import './menu';
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family;
     color: black;
 }
 
@@ -72,7 +72,7 @@ p {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    @include shadow-card;
+    @include box-shadow;
 
     &:hover {
         filter: brightness(120%);

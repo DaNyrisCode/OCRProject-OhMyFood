@@ -129,7 +129,7 @@ footer ul li a img {
   background-color: #F6F6F6;
   width: 100%;
   box-sizing: border-box;
-  box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
 @media all and (min-width: 767.98px) {
   .hero {
@@ -190,11 +190,11 @@ footer ul li a img {
   align-items: center;
   justify-content: center;
   background-color: #F6F6F6;
-  border-radius: 20px;
   padding: 15px 40px;
   position: relative;
   margin: 0 10px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
 }
 @media all and (min-width: 767.98px) {
   .fonctionnement .step {
@@ -222,15 +222,9 @@ footer ul li a img {
 
 .restaurants {
   background-color: #F6F6F6;
-  padding: 30px 20px;
-  margin: 30px auto;
+  padding: 30px 0;
   width: 100%;
   box-sizing: border-box;
-}
-@media all and (min-width: 767.98px) {
-  .restaurants {
-    padding: 30px 180px;
-  }
 }
 .restaurants-grid {
   display: flex;
@@ -248,11 +242,11 @@ footer ul li a img {
 
 .card {
   background-color: #F6F6F6;
-  border-radius: 20px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
   text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
 }
 .card-photo {
   width: 100%;
@@ -260,13 +254,26 @@ footer ul li a img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .card-content {
   display: flex;
   justify-content: space-between;
   padding: 15px;
 }
-.card-content .label.new {
+.card-info {
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+}
+.card-info-title {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+.card-info-subtitle {
+  font-size: 17px;
+  margin: 0;
+}
+
+.label.new {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -274,20 +281,6 @@ footer ul li a img {
   color: #008766;
   padding: 5px 10px;
   font-size: 14px;
-}
-
-.card-info {
-  overflow: hidden;
-  text-decoration: none;
-  position: relative;
-}
-.card-info .info-title {
-  font-size: 18px;
-  margin: 0 0 5px 0;
-}
-.card-info .info-subtitle {
-  font-size: 17px;
-  margin: 0;
 }
 
 * {
