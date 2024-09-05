@@ -19,12 +19,11 @@
 }
 
 .card {
-    background-color: $main;
+    background-color: $font-wht;
     overflow: hidden;
     position: relative;
     text-decoration: none;
     @include rounded;
-    @include box-shadow;
 
     &-photo {
         width: 100%;

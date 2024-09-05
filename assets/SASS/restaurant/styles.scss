@@ -8,7 +8,7 @@
 
 * {
     font-family: $font-family;
-    color: black;
+    color: $font-blk;
 }
 
 body {
@@ -64,7 +64,7 @@ p {
 
 .order-button {
     background: linear-gradient(0deg, $primary, $secondary);
-    color: white;
+    color: $font-wht;
     border: none;
     border-radius: 30px;
     padding: 10px 20px;

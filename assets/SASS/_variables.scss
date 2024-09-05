@@ -4,12 +4,14 @@ $secondary: #FF79DA;
 $tertiary: #99E2D0;
 $new-font: #008766;
 $footer-bg: #353535;
+$font-wht: #FFFFFF;
+$font-blk: #000000;
 
 $font-family: 'Roboto', sans-serif;
 $font-name: 'Shrikhand', sans-serif;
 
 @mixin menu-flex {
-  display:flex ;
+  display: flex;
   flex-direction: column;
   gap: 10px;
 }
@@ -27,18 +29,23 @@ $font-name: 'Shrikhand', sans-serif;
     opacity: 1;
     transform: translateY(-20px);
   }
+
   to {
     transform: translateY(5px);
   }
 }
 
 @keyframes loader-hidden {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
     opacity: 0;
-    visibility: hidden;
     display: none;
   }
 }

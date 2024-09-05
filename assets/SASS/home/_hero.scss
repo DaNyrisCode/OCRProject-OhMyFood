@@ -28,7 +28,7 @@
 
     button {
         background: linear-gradient(0deg, $primary, $secondary);
-        color: white;
+        color: $font-wht;
         border: none;
         border-radius: 30px;
         padding: 10px 20px;
@@ -91,7 +91,7 @@
             top: 50%;
             transform: translateY(-50%);
             background-color: $primary;
-            color: white;
+            color: $font-wht;
             width: 24px;
             height: 24px;
             border-radius: 50%;
