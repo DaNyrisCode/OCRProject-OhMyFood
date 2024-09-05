@@ -11,10 +11,6 @@
      background: $main;
      animation: loader-hidden 3s ease-in-out both;
 
-     &::after {
-
-     }
-
      .loader {
         display: flex;
         align-items: center;

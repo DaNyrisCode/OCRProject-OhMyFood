@@ -38,7 +38,7 @@ $font-name: 'Shrikhand', sans-serif;
   }
   to {
     opacity: 0;
-    translateY: -1000px; ;
+    visibility: hidden;
+    display: none;
   }
-  
 }

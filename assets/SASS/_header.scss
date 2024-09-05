@@ -19,6 +19,7 @@
     background-color: $main;
     padding: 15px;
     width: 100%;
+    box-sizing: border-box;
     box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.2);
 
     @media all and (min-width: 767.98px) {
