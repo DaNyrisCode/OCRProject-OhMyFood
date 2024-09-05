@@ -6,17 +6,39 @@ $new-font: #008766;
 $footer-bg: #353535;
 
 $font-family: 'Roboto', sans-serif;
+$font-name: 'Shrikhand', sans-serif;
 
 @mixin menu-flex {
-    display:flex ;
-    flex-direction: column;
-    gap: 10px;
+  display:flex ;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @mixin box-shadow($x: 0px, $y: 3px, $blur: 15px, $color: rgba(0, 0, 0, 0.3), $inset: false) {
-    box-shadow: if($inset, inset, null) $x $y $blur $color;
-  }
+  box-shadow: if($inset, inset, null) $x $y $blur $color;
+}
 
 @mixin rounded($radius: 20px) {
-    border-radius: $radius;
+  border-radius: $radius;
+}
+
+@keyframes anim-loader {
+  from {
+    opacity: 1;
+    transform: translateY(-20px);
   }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes loader-hidden {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    translateY: -1000px; ;
+  }
+  
+}

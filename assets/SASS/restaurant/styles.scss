@@ -2,6 +2,7 @@
 @import '../header.scss';
 @import '../footer.scss';
 @import '../favorite';
+@import '../animation';
 @import './hero';
 @import './menu';
 
@@ -19,12 +20,12 @@ body {
 }
 
 h1 {
-    font-family: 'Shrikhand', sans-serif;
+    font-family: $font-name;
     font-size: 30px;
 }
 
 h2 {
-    font-family: 'Shrikhand', sans-serif;
+    font-family: $font-name;
     font-size: 28px;
     margin: 30px 0 0 0;
 }
