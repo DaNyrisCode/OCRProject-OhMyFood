@@ -26,17 +26,19 @@
         margin-bottom: 30px;
     }
 
-    button {
+    .button {
         background: linear-gradient(0deg, $primary, $secondary);
         color: $font-wht;
+        text-decoration: none;
         border: none;
         border-radius: 30px;
-        padding: 10px 20px;
+        padding: 15px 20px;
         font-size: 16px;
         font-weight: bold;
         cursor: pointer;
         transition: 0.2s;
         @include box-shadow;
+        @include font-w500;
 
         &:hover {
             filter: brightness(120%);
@@ -45,60 +47,66 @@
 }
 
 /* ---FONCTIONNEMENT */
-.step-contener {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;
-    padding-bottom: 30px;
-
-    @media all and (min-width: 767.98px) {
-        flex-direction: row;
-        justify-content: center;
-        gap: 50px;
-    }
-}
-
 .fonctionnement {
     margin-bottom: 30px;
 
     h2 {
-        padding-top: 30px;
+        padding: 50px 0 25px 0;
     }
-    
-    .step {
+
+    .step-contener {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $main;
-        padding: 15px 40px;
-        position: relative;
-        margin: 0 10px;
-        @include box-shadow;
-        @include rounded;
-
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding-bottom: 50px;
+    
         @media all and (min-width: 767.98px) {
-            margin: 0;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 50px;
+            gap: 30px;
         }
 
-        img {
-            margin-right: 15px;
-        }
-
-        &-absolute {
-            position: absolute;
-            left: -10px;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: $primary;
-            color: $font-wht;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
+        .step {
+            width: 100%;
+            box-sizing: border-box;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 14px;
+            background-color: $main;
+            padding: 15px 40px;
+            position: relative;
+            @include box-shadow;
+            @include rounded;
+    
+            @media all and (min-width: 767.98px) {
+                margin: 0;
+            }
+    
+            img {
+                margin-right: 15px;
+            }
+    
+            p {
+                @include font-w500;
+            }
+    
+            &-absolute {
+                position: absolute;
+                left: -10px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: $primary;
+                color: $font-wht;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+            }
         }
     }
 }

@@ -1,3 +1,4 @@
+// VARIABLES
 $main: #F6F6F6;
 $primary: #9356DC;
 $secondary: #FF79DA;
@@ -10,10 +11,15 @@ $font-blk: #000000;
 $font-family: 'Roboto', sans-serif;
 $font-name: 'Shrikhand', sans-serif;
 
+// MIXINS
 @mixin menu-flex {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+@mixin font-w500 {
+  font-weight: 500;
 }
 
 @mixin box-shadow($x: 0px, $y: 3px, $blur: 15px, $color: rgba(0, 0, 0, 0.3), $inset: false) {
@@ -24,6 +30,7 @@ $font-name: 'Shrikhand', sans-serif;
   border-radius: $radius;
 }
 
+// KEYFRAMES
 @keyframes anim-loader {
   from {
     opacity: 1;
@@ -47,5 +54,17 @@ $font-name: 'Shrikhand', sans-serif;
   100% {
     opacity: 0;
     display: none;
+  }
+}
+
+@keyframes anim-cascada {
+  0% {
+     opacity: 0;
+     transform: translateY(-100px);
+  }
+
+  100% {
+     opacity: 1;
+     transform: translateY(0);
   }
 }

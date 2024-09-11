@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    min-width: 370px;
+    min-width: 320px;
 }
 
 img {
@@ -24,11 +24,12 @@ img {
 
 h2 {
     font-size: 24px;
+    margin: 0;
 }
 
 .optimal-width {
     width: 100%;
-    max-width: 1080px;
+    max-width: 1280px;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 20px;

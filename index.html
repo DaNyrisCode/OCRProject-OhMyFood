@@ -3,7 +3,7 @@
   <head>
     <title>Oh My Food</title>
 
-    <!-- AJOUT FONTS -->
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,9 +30,12 @@
     <!-- HEADER -->
     <header>
       <nav class="home-header">
-        <img src="assets/images/logo/ohmyfood.png" alt="" />
+        <img src="assets/images/logo/ohmyfood.png" alt="Logo OMF" />
         <div class="location">
-          <img src="assets/images/icones/Local.png" alt="" />
+          <img
+            src="assets/images/icones/Local.png"
+            alt="Icône de localisation"
+          />
           <p>Paris, Belleville</p>
         </div>
       </nav>
@@ -42,7 +45,7 @@
     <section class="hero">
       <h1>Réservez le menu qui vous convient</h1>
       <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-      <button>Explorer nos restaurants</button>
+      <a href="#restaurants" class="button">Explorer nos restaurants</a>
     </section>
 
     <!-- FONCTIONNEMENT -->
@@ -51,24 +54,24 @@
       <div class="step-contener">
         <div class="step">
           <span class="step-absolute">1</span>
-          <img src="assets/images/icones/mobile.png" alt="" />
+          <img src="assets/images/icones/mobile.png" alt="Icône mobile" />
           <p>Choisissez un restaurant</p>
         </div>
         <div class="step">
           <span class="step-absolute">2</span>
-          <img src="assets/images/icones/liste.png" alt="" />
+          <img src="assets/images/icones/liste.png" alt="Icône liste" />
           <p>Composez votre menu</p>
         </div>
         <div class="step">
           <span class="step-absolute">3</span>
-          <img src="assets/images/icones/store.png" alt="" />
+          <img src="assets/images/icones/store.png" alt="Icône store" />
           <p>Dégustez au restaurant</p>
         </div>
       </div>
     </section>
 
     <!-- RESTAURANTS -->
-    <section class="restaurants">
+    <section id="restaurants" class="restaurants-section">
       <div class="optimal-width">
         <h2>Restaurants</h2>
         <div class="restaurants-grid">
@@ -77,23 +80,23 @@
             <img
               class="card-photo"
               src="assets/images/photos/palette_du_gout.jpg"
-              alt="La palette du goût"
+              alt="Plat servi au restaurant La palette du goût à Ménilmontant"
             />
             <div class="card-content">
               <div class="card-info">
                 <h3 class="card-info-title">La palette du goût</h3>
-                <p class="card-info-subtitle">Montmartre</p>
+                <p class="card-info-subtitle">Ménilmontant</p>
               </div>
               <span class="label new">Nouveau</span>
               <div class="favorite">
                 <img
                   src="assets/images/icones/Fav_mty.png"
-                  alt=""
+                  alt="Favori non sélectionné"
                   class="empty"
                 />
                 <img
                   src="assets/images/icones/Fav_full.png"
-                  alt=""
+                  alt="Favori sélectionné"
                   class="full"
                 />
               </div>
@@ -101,11 +104,11 @@
           </a>
 
           <!-- RESTAURANT 2 -->
-          <a class="card">
+          <a href="./restaurant2.html" class="card">
             <img
               class="card-photo"
               src="assets/images/photos/note_enchantee.jpg"
-              alt="La note enchantée"
+              alt="Plat servi au restaurant La note enchantée à Charonne"
             />
             <div class="card-content">
               <div class="card-info">
@@ -116,12 +119,12 @@
               <div class="favorite">
                 <img
                   src="assets/images/icones/Fav_mty.png"
-                  alt=""
+                  alt="Favori non sélectionné"
                   class="empty"
                 />
                 <img
                   src="assets/images/icones/Fav_full.png"
-                  alt=""
+                  alt="Favori sélectionné"
                   class="full"
                 />
               </div>
@@ -129,11 +132,11 @@
           </a>
 
           <!-- RESTAURANT 3 -->
-          <a class="card">
+          <a href="./restaurant3.html" class="card">
             <img
               class="card-photo"
               src="assets/images/photos/a_la_francaise.jpg"
-              alt="À la française"
+              alt="Brunch servi au restaurant À la française à Cité Rouge"
             />
             <div class="card-content">
               <div class="card-info">
@@ -143,12 +146,12 @@
               <div class="favorite">
                 <img
                   src="assets/images/icones/Fav_mty.png"
-                  alt=""
+                  alt="Favori non sélectionné"
                   class="empty"
                 />
                 <img
                   src="assets/images/icones/Fav_full.png"
-                  alt=""
+                  alt="Favori sélectionné"
                   class="full"
                 />
               </div>
@@ -156,11 +159,11 @@
           </a>
 
           <!-- RESTAURANT 4 -->
-          <a class="card">
+          <a href="./restaurant4.html" class="card">
             <img
               class="card-photo"
               src="assets/images/photos/delices_des_sens.jpg"
-              alt="Le délice des sens"
+              alt="Plat gastronomique servi au restaurant Le délice des sens à Folies-Méricourt"
             />
             <div class="card-content">
               <div class="card-info">
@@ -170,12 +173,12 @@
               <div class="favorite">
                 <img
                   src="assets/images/icones/Fav_mty.png"
-                  alt=""
+                  alt="Favori non sélectionné"
                   class="empty"
                 />
                 <img
                   src="assets/images/icones/Fav_full.png"
-                  alt=""
+                  alt="Favori sélectionné"
                   class="full"
                 />
               </div>
@@ -188,13 +191,13 @@
     <!-- FOOTER -->
     <footer>
       <nav class="optimal-width">
-        <h4>Ohmyfood</h4>
+        <h4>ohmyfood</h4>
         <ul>
           <li>
             <a href="#"
               ><img
                 src="assets/images/icones/Icon-restaurant.png"
-                alt=""
+                alt="Icône restaurant"
               />Proposer un restaurant</a
             >
           </li>
@@ -202,7 +205,7 @@
             <a href="#"
               ><img
                 src="assets/images/icones/Icon-partenaire.png"
-                alt=""
+                alt="Icône partenaires"
               />Devenir partenaire</a
             >
           </li>

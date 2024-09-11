@@ -20,6 +20,18 @@
          font-family: $font-name;
          font-size: 50px;
          animation: anim-loader 0.8s ease-in-out infinite alternate;
+
+         &:nth-child(1) {
+            animation-delay: -0.25s;
+         }
+         
+         &:nth-child(2) {
+            animation-delay: -0.5s;
+         }
+         
+         &:nth-child(3) {
+            animation-delay: -0.75s;
+         }
       }
 
       &-dot {
@@ -29,35 +41,23 @@
          color: $font-wht;
          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.01);
          animation: anim-loader 0.8s ease-in-out infinite alternate;
+
+         &:nth-child(4) {
+            background: $primary;
+            animation-delay: -1s;
+         }
+         
+         &:nth-child(5) {
+            background: $secondary;
+            animation-delay: -1.25s;
+         }
+         
+         &:nth-child(6) {
+            background: $tertiary;
+            animation-delay: -1.5s;
+         }
       }
    }
-}
-
-.loader-name:nth-child(1) {
-   animation-delay: -0.25s;
-}
-
-.loader-name:nth-child(2) {
-   animation-delay: -0.5s;
-}
-
-.loader-name:nth-child(3) {
-   animation-delay: -0.75s;
-}
-
-.loader-dot:nth-child(4) {
-   background: $primary;
-   animation-delay: -1s;
-}
-
-.loader-dot:nth-child(5) {
-   background: $secondary;
-   animation-delay: -1.25s;
-}
-
-.loader-dot:nth-child(6) {
-   background: $tertiary;
-   animation-delay: -1.5s;
 }
 
 // CASSCADE MENU RESTAURANT
@@ -70,11 +70,15 @@
       transform: translateY(-100px);
 
       &:nth-of-type(2) {
-         animation-delay: 0.5s;
+         animation-delay: 0.3s;
       }
 
       &:nth-of-type(3) {
-         animation-delay: 1s;
+         animation-delay: 0.5s;
+      }
+
+      &:nth-of-type(4) {
+         animation-delay: 0.7s;
       }
 
    }
@@ -82,40 +86,28 @@
 
 .menu-main article {
    &:nth-of-type(1) {
-      animation-delay: 1.5s;
+      animation-delay: 1s;
    }
 
    &:nth-of-type(2) {
-      animation-delay: 2s;
+      animation-delay: 1.3s;
    }
 
    &:nth-of-type(3) {
-      animation-delay: 2.5s;
+      animation-delay: 1.5s;
    }
 }
 
 .menu-dessert article {
    &:nth-of-type(1) {
-      animation-delay: 3s;
+      animation-delay: 1.9s;
    }
 
    &:nth-of-type(2) {
-      animation-delay: 3.5s;
+      animation-delay: 2.1s;
    }
 
    &:nth-of-type(3) {
-      animation-delay: 4s;
-   }
-}
-
-@keyframes anim-cascada {
-   0% {
-      opacity: 0;
-      transform: translateY(-100px);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateY(0);
+      animation-delay: 2.3s;
    }
 }
