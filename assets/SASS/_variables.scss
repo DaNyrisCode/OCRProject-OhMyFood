@@ -25,7 +25,7 @@ $delay-step: 0.5s;
   font-weight: 500;
 }
 
-@mixin box-shadow($x: 0px, $y: 3px, $blur: 15px, $color: rgba(0, 0, 0, 0.3), $inset: false) {
+@mixin box-shadow($x: 0px, $y: 4.01px, $blur: 15px, $color: rgba(0, 0, 0, 0.1), $inset: false) {
   box-shadow: if($inset, inset, null) $x $y $blur $color;
 }
 

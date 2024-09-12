@@ -1,0 +1,33 @@
+
+* {
+    font-family: $font-family;
+    color: $font-blk;
+}
+
+.optimal-width {
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.button {
+    background: linear-gradient(0deg, $primary, $secondary);
+    color: $font-wht;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    @include box-shadow;
+    @include font-w500;
+    margin: 40px 0;
+
+    &:hover {
+        filter: brightness(115%);
+        @include box-shadow($color: rgba(0, 0, 0, 0.35));
+    }
+}

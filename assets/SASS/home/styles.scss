@@ -1,15 +1,11 @@
 @import '../variables.scss';
 @import '../header.scss';
 @import '../footer.scss';
+@import '../global';
 @import '../favorite';
 @import '../animation';
 @import 'hero.scss';
 @import 'restaurants.scss';
-
-* {
-    font-family: $font-family;
-    color: $font-blk;
-}
 
 body {
     display: flex;
@@ -25,12 +21,4 @@ img {
 h2 {
     font-size: 24px;
     margin: 0;
-}
-
-.optimal-width {
-    width: 100%;
-    max-width: 1280px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0 20px;
 }

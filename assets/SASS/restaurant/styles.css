@@ -135,6 +135,38 @@ footer ul li a img {
   padding-right: 10px;
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+}
+
+.optimal-width {
+  width: 100%;
+  max-width: 1280px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button {
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  color: #FFFFFF;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0px 4.01px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  margin: 40px 0;
+}
+.button:hover {
+  filter: brightness(115%);
+  box-shadow: 0px 4.01px 15px rgba(0, 0, 0, 0.35);
+}
+
 .favorite {
   margin: 10px 30px 0 0;
   position: relative;
@@ -311,8 +343,9 @@ footer ul li a img {
   justify-content: space-between;
   align-items: flex-end;
   overflow: hidden;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4.01px 15px rgba(0, 0, 0, 0.1);
   position: relative;
+  margin-top: 12px;
 }
 .menu-item-check {
   position: absolute;
@@ -365,11 +398,6 @@ footer ul li a img {
   right: 0;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
-  color: #000000;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -407,31 +435,4 @@ p {
   .enseigne-photo {
     height: 385px;
   }
-}
-
-.optimal-width {
-  width: 100%;
-  max-width: 1280px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.button {
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
-  color: #FFFFFF;
-  text-decoration: none;
-  border: none;
-  border-radius: 30px;
-  padding: 10px 20px;
-  margin: 40px 0;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.2s;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
-  font-weight: 500;
-}
-.button:hover {
-  filter: brightness(120%);
 }/*# sourceMappingURL=styles.css.map */

@@ -18,6 +18,7 @@
     overflow: hidden; // Pour que la couleur verte ne dépasse pas de la card
     @include box-shadow;
     position: relative;
+    margin-top: 12px;
 
     &-check {
       position: absolute;

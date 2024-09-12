@@ -64,13 +64,13 @@
 
 .menu {
    .menu-item {
-     opacity: 0;
-     animation: anim-cascada $animation-duration ease-in-out forwards;
+      opacity: 0;
+      animation: anim-cascada $animation-duration ease-in-out forwards;
+
+      @for $i from 1 through 15 {
+         &:nth-of-type(#{$i}) {
+            @include anim-delay($i);
+         }
+      }
    }
- 
-   @for $i from 1 through 15 { 
-     .menu-item:nth-of-type(#{$i}) {
-       @include anim-delay($i);
-     }
-   }
- }
+}

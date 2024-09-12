@@ -1,15 +1,12 @@
 @import '../variables.scss';
 @import '../header.scss';
 @import '../footer.scss';
+@import '../global';
 @import '../favorite';
 @import '../animation';
 @import './hero';
 @import './menu';
 
-* {
-    font-family: $font-family;
-    color: $font-blk;
-}
 
 body {
     display: flex;
@@ -46,33 +43,5 @@ p {
     @media all and (min-width: 767.98px) {
         height: 385px;
 
-    }
-}
-
-.optimal-width {
-    width: 100%;
-    max-width: 1280px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.button {
-    background: linear-gradient(0deg, $primary, $secondary);
-    color: $font-wht;
-    text-decoration: none;
-    border: none;
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin: 40px 0;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s;
-    @include box-shadow;
-    @include font-w500;
-
-    &:hover {
-        filter: brightness(120%);
     }
 }
