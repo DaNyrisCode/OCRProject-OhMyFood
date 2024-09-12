@@ -11,6 +11,9 @@ $font-blk: #000000;
 $font-family: 'Roboto', sans-serif;
 $font-name: 'Shrikhand', sans-serif;
 
+$animation-duration: 0.5s;
+$delay-step: 0.5s;
+
 // MIXINS
 @mixin menu-flex {
   display: flex;
@@ -28,6 +31,10 @@ $font-name: 'Shrikhand', sans-serif;
 
 @mixin rounded($radius: 20px) {
   border-radius: $radius;
+}
+
+@mixin anim-delay($index) {
+  animation-delay: calc(#{$index} * #{$delay-step});
 }
 
 // KEYFRAMES

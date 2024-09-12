@@ -6,7 +6,7 @@
    box-sizing: border-box;
    align-items: center;
    justify-content: center;
-   animation: loader-hidden 3s ease-in-out both;
+   animation: loader-hidden 2s ease-in-out both;
    position: fixed;
    backdrop-filter: blur(10px);
 
@@ -62,52 +62,15 @@
 
 // CASSCADE MENU RESTAURANT
 
-.cascada {
-   article {
-      opacity: 0;
-      animation: anim-cascada 0.5s ease-in-out forwards;
-      animation-delay: 0s;
-      transform: translateY(-100px);
-
-      &:nth-of-type(2) {
-         animation-delay: 0.3s;
-      }
-
-      &:nth-of-type(3) {
-         animation-delay: 0.5s;
-      }
-
-      &:nth-of-type(4) {
-         animation-delay: 0.7s;
-      }
-
+.menu article {
+   opacity: 0;
+   animation: anim-cascada #{$animation-duration} ease-in-out forwards;
+   transform: translateY(-100px);
+ }
+ 
+ // Boucle pour appliquer la cascade sur l'ensemble des articles
+ @for $i from 1 through 10 { // Nombre en fonction du total de plats
+   .menu article:nth-of-type(#{$i}) {
+     @include anim-delay($i);
    }
-}
-
-.menu-main article {
-   &:nth-of-type(1) {
-      animation-delay: 1s;
-   }
-
-   &:nth-of-type(2) {
-      animation-delay: 1.3s;
-   }
-
-   &:nth-of-type(3) {
-      animation-delay: 1.5s;
-   }
-}
-
-.menu-dessert article {
-   &:nth-of-type(1) {
-      animation-delay: 1.9s;
-   }
-
-   &:nth-of-type(2) {
-      animation-delay: 2.1s;
-   }
-
-   &:nth-of-type(3) {
-      animation-delay: 2.3s;
-   }
-}
+ }
