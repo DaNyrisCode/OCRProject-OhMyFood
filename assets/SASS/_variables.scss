@@ -12,7 +12,7 @@ $font-family: 'Roboto', sans-serif;
 $font-name: 'Shrikhand', sans-serif;
 
 $animation-duration: 0.5s;
-$delay-step: 0.5s;
+$delay-step: 0.4s;
 
 // MIXINS
 @mixin menu-flex {
@@ -35,43 +35,4 @@ $delay-step: 0.5s;
 
 @mixin anim-delay($index) {
   animation-delay: $index * $delay-step;
-}
-
-// KEYFRAMES
-@keyframes anim-loader {
-  from {
-    opacity: 1;
-    transform: translateY(-20px);
-  }
-
-  to {
-    transform: translateY(5px);
-  }
-}
-
-@keyframes loader-hidden {
-  0% {
-    opacity: 1;
-  }
-
-  90% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
-
-@keyframes anim-cascada {
-  0% {
-     opacity: 0;
-     transform: translateY(-100px);
-  }
-
-  100% {
-     opacity: 1;
-     transform: translateY(0);
-  }
 }
