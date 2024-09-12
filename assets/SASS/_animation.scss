@@ -62,15 +62,15 @@
 
 // CASSCADE MENU RESTAURANT
 
-.menu article {
-   opacity: 0;
-   animation: anim-cascada #{$animation-duration} ease-in-out forwards;
-   transform: translateY(-100px);
- }
+.menu {
+   .menu-item {
+     opacity: 0;
+     animation: anim-cascada $animation-duration ease-in-out forwards;
+   }
  
- // Boucle pour appliquer la cascade sur l'ensemble des articles
- @for $i from 1 through 10 { // Nombre en fonction du total de plats
-   .menu article:nth-of-type(#{$i}) {
-     @include anim-delay($i);
+   @for $i from 1 through 15 { 
+     .menu-item:nth-of-type(#{$i}) {
+       @include anim-delay($i);
+     }
    }
  }

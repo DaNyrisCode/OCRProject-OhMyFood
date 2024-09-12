@@ -34,7 +34,7 @@ $delay-step: 0.5s;
 }
 
 @mixin anim-delay($index) {
-  animation-delay: calc(#{$index} * #{$delay-step});
+  animation-delay: $index * $delay-step;
 }
 
 // KEYFRAMES
