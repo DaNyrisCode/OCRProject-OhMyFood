@@ -1,4 +1,4 @@
-GitHub :
+GitHubPages :
 https://danyriscode.github.io/OCRProject-OhMyFood/
 
 Repository :
