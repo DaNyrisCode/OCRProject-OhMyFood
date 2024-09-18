@@ -1,9 +1,3 @@
-GitHubPages :
-https://danyriscode.github.io/OCRProject-OhMyFood/
-
-Repository :
-https://github.com/DaNyrisCode/OCRProject-OhMyFood
-
 Oh My Food.
 
 Application web qui répertorie les menus de restaurants gastronomiques. Les clients pourront composer le menu de leur repas.
